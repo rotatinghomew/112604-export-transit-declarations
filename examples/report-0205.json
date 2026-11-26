@@ -1,0 +1,637 @@
+{
+  "as_of": "2026-11-27T02:05:00Z",
+  "vins": [
+    {
+      "vin": "V310",
+      "invoice": {
+        "invoice": "INV-1",
+        "line": 1,
+        "vin": "V310",
+        "revision": 1,
+        "exporter": "E-8",
+        "trade": "bonded",
+        "commodity": "8703-A",
+        "unit": "car",
+        "USD_cents": 1230000,
+        "agent": "A-1"
+      },
+      "physical_state": "departed",
+      "run": "B16",
+      "permit_used": "P-18",
+      "basis_at_query": {
+        "state": "none",
+        "code": "permit_revoked",
+        "permit": null,
+        "active": [],
+        "history": [
+          {
+            "permit": "P-18",
+            "vin": "V310",
+            "known": true,
+            "authorized_at": "2026-11-27T01:20:00Z",
+            "until": "2026-11-27T03:10:00Z",
+            "grant_event": "R11",
+            "revoked_at": "2026-11-27T01:52:00Z",
+            "revoke_events": [
+              "R14"
+            ],
+            "grant_count": 1
+          }
+        ],
+        "at": "2026-11-27T02:05:00Z"
+      },
+      "line": [
+        "A-700",
+        "L1"
+      ],
+      "line_outcome": "revoked",
+      "issues": [
+        {
+          "code": "permit_revoked_after_exit",
+          "permit": "P-18",
+          "revoked_at": "2026-11-27T01:52:00Z",
+          "departed_at": "2026-11-27T01:48:00Z"
+        }
+      ],
+      "todos": [],
+      "departure_audit": {
+        "vin": "V310",
+        "run": "B16",
+        "departed_at": "2026-11-27T01:48:00Z",
+        "event": "K2",
+        "uploaded_at": "2026-11-27T02:01:00Z",
+        "permit_used": "P-18",
+        "valid_basis_at_gate": "P-18",
+        "issues": [
+          {
+            "code": "permit_revoked_after_exit",
+            "permit": "P-18",
+            "revoked_at": "2026-11-27T01:52:00Z",
+            "departed_at": "2026-11-27T01:48:00Z"
+          }
+        ],
+        "follow_up": {
+          "owner": "customs_affairs",
+          "code": "customs_disposition_after_revocation",
+          "instruction": "车辆确已过岗离场，撤回后的证据不得再用于发车；本车交关务处置，不得改回在库可装。",
+          "revocations": [
+            {
+              "permit": "P-18",
+              "revoked_at": "2026-11-27T01:52:00Z",
+              "events": [
+                "R14"
+              ]
+            }
+          ]
+        }
+      },
+      "follow_up": {
+        "owner": "customs_affairs",
+        "code": "customs_disposition_after_revocation",
+        "instruction": "车辆确已过岗离场，撤回后的证据不得再用于发车；本车交关务处置，不得改回在库可装。",
+        "revocations": [
+          {
+            "permit": "P-18",
+            "revoked_at": "2026-11-27T01:52:00Z",
+            "events": [
+              "R14"
+            ]
+          }
+        ]
+      },
+      "releasable": false,
+      "at": "2026-11-27T02:05:00Z"
+    },
+    {
+      "vin": "V311",
+      "invoice": {
+        "invoice": "INV-2",
+        "line": 1,
+        "vin": "V311",
+        "revision": 1,
+        "exporter": "E-8",
+        "trade": "bonded",
+        "commodity": "8703-A",
+        "unit": "car",
+        "USD_cents": 1320000,
+        "agent": "A-1"
+      },
+      "confirmed": false,
+      "confirmation_problem": "materials_not_confirmed",
+      "yard": {
+        "vin": "V311",
+        "zone": "K",
+        "seen": "2026-11-27T00:51:00Z",
+        "clerk": "Li-1",
+        "seen_dt": "2026-11-27T00:51:00Z"
+      },
+      "physical_state": "staged",
+      "physical": {
+        "state": "staged",
+        "run": "B16",
+        "staged": {
+          "run": "B16",
+          "at": "2026-11-27T01:39:00Z",
+          "event": "K3",
+          "permit_presented": "P-18"
+        },
+        "departure": null,
+        "history": [
+          {
+            "event": "K3",
+            "action": "staged",
+            "run": "B16",
+            "at": "2026-11-27T01:39:00Z",
+            "uploaded": "2026-11-27T01:39:02Z",
+            "permit": "P-18"
+          }
+        ],
+        "anomalies": []
+      },
+      "run": "B16",
+      "basis": {
+        "state": "unique",
+        "permit": "P-18",
+        "basis": {
+          "permit": "P-18",
+          "authorized_at": "2026-11-27T01:20:00Z",
+          "until": "2026-11-27T03:10:00Z"
+        },
+        "active": [
+          {
+            "permit": "P-18",
+            "authorized_at": "2026-11-27T01:20:00Z",
+            "until": "2026-11-27T03:10:00Z"
+          }
+        ],
+        "history": [
+          {
+            "permit": "P-18",
+            "vin": "V311",
+            "known": true,
+            "authorized_at": "2026-11-27T01:20:00Z",
+            "until": "2026-11-27T03:10:00Z",
+            "grant_event": "R11",
+            "revoked_at": null,
+            "revoke_events": [],
+            "grant_count": 1
+          }
+        ],
+        "at": "2026-11-27T02:05:00Z"
+      },
+      "line": [
+        "A-700",
+        "L1"
+      ],
+      "line_outcome": "authorized",
+      "issues": [],
+      "todos": [],
+      "departure_audit": null,
+      "follow_up": null,
+      "releasable": true,
+      "at": "2026-11-27T02:05:00Z"
+    },
+    {
+      "vin": "V312",
+      "invoice": {
+        "invoice": "INV-2",
+        "line": 2,
+        "vin": "V312",
+        "revision": 2,
+        "exporter": "E-8",
+        "trade": "bonded",
+        "commodity": "8703-A",
+        "unit": "car",
+        "USD_cents": 1250000,
+        "agent": "A-1"
+      },
+      "confirmed": false,
+      "confirmation_problem": "materials_not_confirmed",
+      "yard": {
+        "vin": "V312",
+        "zone": "K",
+        "seen": "2026-11-27T00:52:00Z",
+        "clerk": "Li-1",
+        "seen_dt": "2026-11-27T00:52:00Z"
+      },
+      "physical_state": "in_yard",
+      "physical": {
+        "state": "in_yard",
+        "run": null,
+        "staged": null,
+        "departure": null,
+        "history": [],
+        "anomalies": []
+      },
+      "run": null,
+      "basis": {
+        "state": "none",
+        "code": "line_closed_without_permit",
+        "permit": null,
+        "active": [],
+        "history": [],
+        "at": "2026-11-27T02:05:00Z"
+      },
+      "line": [
+        "A-700",
+        "L2"
+      ],
+      "line_outcome": "closed_without_permit",
+      "issues": [
+        {
+          "code": "invoice_revision_needs_review",
+          "current_revision": 2,
+          "revisions": [
+            1,
+            2
+          ]
+        },
+        {
+          "code": "line_closed_without_permit"
+        }
+      ],
+      "todos": [
+        {
+          "code": "review_latest_invoice_revision",
+          "text": "发票存在 2 个 revision，须按最新 revision 2 复核确认"
+        },
+        {
+          "code": "redeclare_closed_line",
+          "text": "该行已关闭且未准予，拆出车辆重新归并申报"
+        }
+      ],
+      "departure_audit": null,
+      "follow_up": null,
+      "releasable": false,
+      "at": "2026-11-27T02:05:00Z"
+    },
+    {
+      "vin": "V313",
+      "invoice": {
+        "invoice": "INV-3",
+        "line": 1,
+        "vin": "V313",
+        "revision": 1,
+        "exporter": "E-8",
+        "trade": "bonded",
+        "commodity": "8703-A",
+        "unit": "car",
+        "USD_cents": 1135000,
+        "agent": "A-1"
+      },
+      "confirmed": false,
+      "confirmation_problem": "materials_not_confirmed",
+      "yard": {
+        "vin": "V313",
+        "zone": "K",
+        "seen": "2026-11-27T01:30:00Z",
+        "clerk": "Du-2",
+        "seen_dt": "2026-11-27T01:30:00Z"
+      },
+      "physical_state": "in_yard",
+      "physical": {
+        "state": "in_yard",
+        "run": null,
+        "staged": null,
+        "departure": null,
+        "history": [],
+        "anomalies": []
+      },
+      "run": null,
+      "basis": {
+        "state": "none",
+        "code": "no_permit",
+        "permit": null,
+        "active": [],
+        "history": [],
+        "at": "2026-11-27T02:05:00Z"
+      },
+      "line": null,
+      "line_outcome": null,
+      "issues": [
+        {
+          "code": "no_permit"
+        }
+      ],
+      "todos": [
+        {
+          "code": "confirm_materials",
+          "text": "复核申报资料并核对在库 VIN"
+        },
+        {
+          "code": "obtain_permit",
+          "text": "完成复核申报并取得口岸准予回执"
+        }
+      ],
+      "departure_audit": null,
+      "follow_up": null,
+      "releasable": false,
+      "at": "2026-11-27T02:05:00Z"
+    }
+  ],
+  "releasable_vins": [
+    "V311"
+  ],
+  "basis_conflicts": [],
+  "unsupported_staged": [],
+  "runs": {
+    "B16": {
+      "run": "B16",
+      "source": "fleet",
+      "confirmed": null,
+      "confirmed_at": null,
+      "members": [
+        {
+          "vin": "V310",
+          "substitute": false,
+          "physical_state": "departed",
+          "verification_ok": false
+        },
+        {
+          "vin": "V311",
+          "substitute": false,
+          "physical_state": "staged",
+          "verification_ok": true
+        }
+      ],
+      "unsupported": []
+    }
+  },
+  "lines": [
+    {
+      "submission": "A-700",
+      "line": "L1",
+      "status": "partially_or_fully_revoked",
+      "external_record": true,
+      "agent": null,
+      "grouping": {
+        "exporter": "E-8",
+        "trade": "bonded",
+        "commodity": "8703-A",
+        "unit": "car"
+      },
+      "amounts": {
+        "invoice_total_cents": 2550000,
+        "declared_cents": null,
+        "matches": null
+      },
+      "provenance": null,
+      "receipts": [
+        {
+          "event": "R11",
+          "disposition": "authorized",
+          "permit": "P-18",
+          "vins": [
+            "V310",
+            "V311"
+          ],
+          "at": "2026-11-27T01:20:00Z",
+          "until": "2026-11-27T03:10:00Z"
+        },
+        {
+          "event": "R14",
+          "disposition": "revoked",
+          "permit": "P-18",
+          "vins": [
+            "V310"
+          ],
+          "at": "2026-11-27T01:52:00Z",
+          "until": "2026-11-27T03:10:00Z"
+        }
+      ],
+      "composition": [
+        "V310",
+        "V311"
+      ],
+      "vehicles": [
+        {
+          "vin": "V310",
+          "invoice_key": "INV-1/1",
+          "revision": 1,
+          "physical_state": "departed",
+          "run": "B16",
+          "permit_used_on_departure": "P-18",
+          "valid_basis": null,
+          "releasable": false,
+          "snapshot_current": null,
+          "issues": [
+            {
+              "code": "permit_revoked_after_exit",
+              "permit": "P-18",
+              "revoked_at": "2026-11-27T01:52:00Z",
+              "departed_at": "2026-11-27T01:48:00Z"
+            }
+          ],
+          "todos": [],
+          "follow_up": {
+            "owner": "customs_affairs",
+            "code": "customs_disposition_after_revocation",
+            "instruction": "车辆确已过岗离场，撤回后的证据不得再用于发车；本车交关务处置，不得改回在库可装。",
+            "revocations": [
+              {
+                "permit": "P-18",
+                "revoked_at": "2026-11-27T01:52:00Z",
+                "events": [
+                  "R14"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "vin": "V311",
+          "invoice_key": "INV-2/1",
+          "revision": 1,
+          "physical_state": "staged",
+          "run": "B16",
+          "permit_used_on_departure": null,
+          "valid_basis": "P-18",
+          "releasable": true,
+          "snapshot_current": null,
+          "issues": [],
+          "todos": [],
+          "follow_up": null
+        }
+      ],
+      "open_issues": [
+        {
+          "vin": "V310",
+          "code": "permit_revoked_after_exit",
+          "permit": "P-18",
+          "revoked_at": "2026-11-27T01:52:00Z",
+          "departed_at": "2026-11-27T01:48:00Z"
+        }
+      ],
+      "open_todos": [],
+      "customs_affairs": [
+        {
+          "vin": "V310",
+          "owner": "customs_affairs",
+          "code": "customs_disposition_after_revocation",
+          "instruction": "车辆确已过岗离场，撤回后的证据不得再用于发车；本车交关务处置，不得改回在库可装。",
+          "revocations": [
+            {
+              "permit": "P-18",
+              "revoked_at": "2026-11-27T01:52:00Z",
+              "events": [
+                "R14"
+              ]
+            }
+          ]
+        }
+      ],
+      "at": "2026-11-27T02:05:00Z"
+    },
+    {
+      "submission": "A-700",
+      "line": "L2",
+      "status": "closed_without_permit",
+      "external_record": true,
+      "agent": null,
+      "grouping": {
+        "exporter": "E-8",
+        "trade": "bonded",
+        "commodity": "8703-A",
+        "unit": "car"
+      },
+      "amounts": {
+        "invoice_total_cents": 1250000,
+        "declared_cents": null,
+        "matches": null
+      },
+      "provenance": null,
+      "receipts": [
+        {
+          "event": "R12",
+          "disposition": "asked_to_amend",
+          "permit": null,
+          "vins": [
+            "V312"
+          ],
+          "at": "2026-11-27T01:21:00Z",
+          "until": "2026-11-27T03:10:00Z"
+        },
+        {
+          "event": "R13",
+          "disposition": "closed_without_permit",
+          "permit": null,
+          "vins": [
+            "V312"
+          ],
+          "at": "2026-11-27T01:43:00Z",
+          "until": "2026-11-27T03:10:00Z"
+        }
+      ],
+      "composition": [
+        "V312"
+      ],
+      "vehicles": [
+        {
+          "vin": "V312",
+          "invoice_key": "INV-2/2",
+          "revision": 2,
+          "physical_state": "in_yard",
+          "run": null,
+          "permit_used_on_departure": null,
+          "valid_basis": null,
+          "releasable": false,
+          "snapshot_current": null,
+          "issues": [
+            {
+              "code": "invoice_revision_needs_review",
+              "current_revision": 2,
+              "revisions": [
+                1,
+                2
+              ]
+            },
+            {
+              "code": "line_closed_without_permit"
+            }
+          ],
+          "todos": [
+            {
+              "code": "review_latest_invoice_revision",
+              "text": "发票存在 2 个 revision，须按最新 revision 2 复核确认"
+            },
+            {
+              "code": "redeclare_closed_line",
+              "text": "该行已关闭且未准予，拆出车辆重新归并申报"
+            }
+          ],
+          "follow_up": null
+        }
+      ],
+      "open_issues": [
+        {
+          "vin": "V312",
+          "code": "invoice_revision_needs_review",
+          "current_revision": 2,
+          "revisions": [
+            1,
+            2
+          ]
+        },
+        {
+          "vin": "V312",
+          "code": "line_closed_without_permit"
+        }
+      ],
+      "open_todos": [
+        {
+          "vin": "V312",
+          "code": "review_latest_invoice_revision",
+          "text": "发票存在 2 个 revision，须按最新 revision 2 复核确认"
+        },
+        {
+          "vin": "V312",
+          "code": "redeclare_closed_line",
+          "text": "该行已关闭且未准予，拆出车辆重新归并申报"
+        }
+      ],
+      "customs_affairs": [],
+      "at": "2026-11-27T02:05:00Z"
+    }
+  ],
+  "customs_affairs": [
+    {
+      "vin": "V310",
+      "follow_up": {
+        "owner": "customs_affairs",
+        "code": "customs_disposition_after_revocation",
+        "instruction": "车辆确已过岗离场，撤回后的证据不得再用于发车；本车交关务处置，不得改回在库可装。",
+        "revocations": [
+          {
+            "permit": "P-18",
+            "revoked_at": "2026-11-27T01:52:00Z",
+            "events": [
+              "R14"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "todos": [
+    {
+      "vin": "V312",
+      "code": "review_latest_invoice_revision",
+      "text": "发票存在 2 个 revision，须按最新 revision 2 复核确认"
+    },
+    {
+      "vin": "V312",
+      "code": "redeclare_closed_line",
+      "text": "该行已关闭且未准予，拆出车辆重新归并申报"
+    },
+    {
+      "vin": "V313",
+      "code": "confirm_materials",
+      "text": "复核申报资料并核对在库 VIN"
+    },
+    {
+      "vin": "V313",
+      "code": "obtain_permit",
+      "text": "完成复核申报并取得口岸准予回执"
+    }
+  ]
+}
