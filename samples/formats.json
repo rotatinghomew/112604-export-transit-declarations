@@ -1,0 +1,100 @@
+{
+  "feeds": {
+    "invoices": {
+      "key": [
+        "invoice",
+        "line",
+        "vin",
+        "revision"
+      ],
+      "fields": {
+        "invoice": "string",
+        "line": "int",
+        "vin": "string",
+        "revision": "int",
+        "exporter": "string",
+        "trade": "string",
+        "commodity": "string",
+        "unit": "string",
+        "USD_cents": "int",
+        "agent": "string"
+      },
+      "note": "每条行记录含一辆车，以 1 辆计。金额为美分。agent 是提交时持有授权的企业引用。"
+    },
+    "customs_receipts": {
+      "key": [
+        "event"
+      ],
+      "fields": {
+        "event": "string",
+        "submission": "string",
+        "line": "string",
+        "vins": "list",
+        "disposition": "string",
+        "permit": "string",
+        "at": "time",
+        "until": "time"
+      },
+      "note": "disposition 可为 asked_to_amend、authorized、revoked 或 closed_without_permit。后两种各自明确结束所列 VIN 的原证据或未核放行程。各条以接收时提交内容与 VIN 集合关联。"
+    },
+    "fleet_reports": {
+      "key": [
+        "event"
+      ],
+      "fields": {
+        "event": "string",
+        "run": "string",
+        "vin": "string",
+        "permit": "string",
+        "action": "string",
+        "at": "time",
+        "uploaded": "time"
+      },
+      "note": "action 为 staged、departed 或 unloaded，departed 配有出场时实际使用的 permit。"
+    },
+    "yard_presence": {
+      "key": [
+        "vin"
+      ],
+      "fields": {
+        "vin": "string",
+        "zone": "string",
+        "seen": "time",
+        "clerk": "string"
+      },
+      "note": "由场站提交的待出区在库核验，记录当前实车和签认岗。"
+    }
+  },
+  "references": [
+    [
+      "fleet_reports",
+      [
+        "permit"
+      ],
+      "customs_receipts",
+      [
+        "permit"
+      ]
+    ],
+    [
+      "fleet_reports",
+      [
+        "vin"
+      ],
+      "invoices",
+      [
+        "vin"
+      ]
+    ],
+    [
+      "invoices",
+      [
+        "vin"
+      ],
+      "yard_presence",
+      [
+        "vin"
+      ]
+    ]
+  ]
+}

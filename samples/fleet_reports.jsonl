@@ -1,0 +1,3 @@
+{"event": "K1", "run": "B16", "vin": "V310", "permit": "P-18", "action": "staged", "at": "2026-11-27T01:31:00Z", "uploaded": "2026-11-27T01:31:01Z"}
+{"event": "K2", "run": "B16", "vin": "V310", "permit": "P-18", "action": "departed", "at": "2026-11-27T01:48:00Z", "uploaded": "2026-11-27T02:01:00Z"}
+{"event": "K3", "run": "B16", "vin": "V311", "permit": "P-18", "action": "staged", "at": "2026-11-27T01:39:00Z", "uploaded": "2026-11-27T01:39:02Z"}

@@ -1,0 +1,5 @@
+{"invoice": "INV-1", "line": 1, "vin": "V310", "revision": 1, "exporter": "E-8", "trade": "bonded", "commodity": "8703-A", "unit": "car", "USD_cents": 1230000, "agent": "A-1"}
+{"invoice": "INV-2", "line": 1, "vin": "V311", "revision": 1, "exporter": "E-8", "trade": "bonded", "commodity": "8703-A", "unit": "car", "USD_cents": 1320000, "agent": "A-1"}
+{"invoice": "INV-2", "line": 2, "vin": "V312", "revision": 1, "exporter": "E-8", "trade": "bonded", "commodity": "8703-B", "unit": "car", "USD_cents": 1250000, "agent": "A-1"}
+{"invoice": "INV-3", "line": 1, "vin": "V313", "revision": 1, "exporter": "E-8", "trade": "bonded", "commodity": "8703-A", "unit": "car", "USD_cents": 1135000, "agent": "A-1"}
+{"invoice": "INV-2", "line": 2, "vin": "V312", "revision": 2, "exporter": "E-8", "trade": "bonded", "commodity": "8703-A", "unit": "car", "USD_cents": 1250000, "agent": "A-1"}

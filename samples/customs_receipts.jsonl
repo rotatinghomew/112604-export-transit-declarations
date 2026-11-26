@@ -1,0 +1,4 @@
+{"event": "R11", "submission": "A-700", "line": "L1", "vins": ["V310", "V311"], "disposition": "authorized", "permit": "P-18", "at": "2026-11-27T01:20:00Z", "until": "2026-11-27T03:10:00Z"}
+{"event": "R12", "submission": "A-700", "line": "L2", "vins": ["V312"], "disposition": "asked_to_amend", "permit": "", "at": "2026-11-27T01:21:00Z", "until": "2026-11-27T03:10:00Z"}
+{"event": "R13", "submission": "A-700", "line": "L2", "vins": ["V312"], "disposition": "closed_without_permit", "permit": "", "at": "2026-11-27T01:43:00Z", "until": "2026-11-27T03:10:00Z"}
+{"event": "R14", "submission": "A-700", "line": "L1", "vins": ["V310"], "disposition": "revoked", "permit": "P-18", "at": "2026-11-27T01:52:00Z", "until": "2026-11-27T03:10:00Z"}
